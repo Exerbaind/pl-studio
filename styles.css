@@ -21,6 +21,12 @@ body {
     background-color: var(--var--page-background);
     color: var(--var--text-color);
     padding-bottom: var(--var--block-margin);
+    opacity: 1;
+    transition: .3;
+}
+
+.body-hider {
+    opacity: 0;
 }
 
 .hero {
@@ -40,7 +46,7 @@ body {
 
 .hero-content {
     position: absolute;
-    bottom: 80px;
+    bottom: 120px;
     left: var(--var--page-padding);
 }
 
