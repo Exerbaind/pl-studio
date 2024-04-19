@@ -7,6 +7,7 @@
     --var--text-color: #100F0F;
     --var--page-padding: 16px;
     --var--page-background: white;
+    --var--block-margin: 64px;
 }
 
 * {
@@ -15,36 +16,20 @@
     box-sizing: border-box;
 }
 
-ul, ol {
-    margin-left: 16px;
-}
-
-.center {
-    text-align: center;
-}
-
-.icon {
-    font-size: 14px;
-}
-
 body {
     font-family: 'Accuratist';
     background-color: var(--var--page-background);
-    transition: .3s;
-    opacity: 0;
+    color: var(--var--text-color);
+    padding-bottom: var(--var--block-margin);
 }
 
-.page-visible {
-    opacity: 1;
-}
-
-.main {
-    height: 100vh;
-    width: 100vw;
+.hero {
     position: relative;
+    height: 100vh;
+    width: 100vw;    
 }
 
-.main-img {
+.hero-img {
     position: absolute;
     left: 0;
     top: 0;
@@ -53,143 +38,181 @@ body {
     object-fit: cover;
 }
 
-.main-content {
+.hero-content {
     position: absolute;
-    width: 100%;
-    bottom: 30%;
-    left: 0;
-    background-color: rgba(217, 217, 217, 0.8);
-    padding: 0 var(--var--page-padding);
-    height: 150px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    bottom: 80px;
+    left: var(--var--page-padding);
 }
 
-.main-title {
-    font-size: 20px;
-    color: var(--var--text-color);
-    width: 100%;
-    text-align: center;
+.hero-title {
+    text-transform: uppercase;
+    color: #FDFDFD;
+    font-size: 48px;
     font-weight: 400;
+}
+
+.hero-text {
+    margin-top: 12px;
+    color: #FDFDFD;
+    font-size: 16px;
+    line-height: 24px;
 }
 
 .about {
-    padding: 24px var(--var--page-padding);
+    margin-top: var(--var--block-margin);
+    padding: 0 var(--var--page-padding);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-img {
+    height: 120px;
+    width: 120px;
 }
 
 .about-text {
-    color: 24px var(--var--text-color);
+    margin-top: 16px;
     font-size: 16px;
     line-height: 24px;
     text-align: center;
 }
 
-.ideology {
-    padding: 24px var(--var--page-padding);
-    background-color: rgba(217, 217, 217, 0.8);
+.students {
+    margin-top: var(--var--block-margin);
 }
 
-.ideology-text {
-    color: 24px var(--var--text-color);
-    font-size: 16px;
-    line-height: 24px;
-    text-align: center;
-}
-
-.programs {
-    margin-top: 48px;
-}
-
-.programs-title {
-    color: var(--var--text-color);
-    font-size: 20px;
-    text-align: center;
+.students-title {
+    font-size: 24px;
     text-transform: uppercase;
+    font-weight: 400;
+    text-align: center;
+}
+
+.courses {
+    margin-top: var(--var--block-margin);
+}
+
+.coursesItem {}
+
+.coursesItem-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.coursesItem-title h3 {
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.coursesItem-title p {
+    font-size: 24px;
+}
+
+.coursesItem-block {
+    border-bottom: 1px solid #723B27;
+    padding: 24px var(--var--page-padding);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.withBorderTop {
+    border-top: 1px solid #723B27;
+}
+
+.coursesItem-block-item {
+    margin-top: 16px;
+}
+
+.coursesItem-block-item:first-child {
+    margin-top: 0;
+}
+
+.coursesItem-block-title {
+    font-size: 18px;
+    line-height: 24px;
+    text-decoration: underline;
+}
+
+.coursesItem-block-subTitle {
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.coursesItem-block-text {
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.coursesItem-block-price {
+    margin-top: 16px;
+    border: 1px solid #723B27;
+    padding: 8px 16px;
+}
+
+.coursesItem-block-price-text {
+    font-size: 16px;
+}
+
+.outro {
+    margin-top: var(--var--block-margin);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 var(--var--page-padding);
+}
+
+.outro-img  {
+    height: 120px;
+    width: 120px;
     margin-bottom: 16px;
 }
 
-.programItem {
-    padding: 24px var(--var--page-padding);
-}
-
-.programItem:nth-child(even) {
-    background-color: rgba(217, 217, 217, 0.8);
-}
-
-.programItem-par {
-    margin-top: 16px;
-}
-
-.programItem-par:first-child {
-    margin-top: 0;
-}
-
-.programItem-par .title {
-    color: var(--var--text-color);
-    font-size: 16px;
-    line-height: 24px;
-    text-transform: uppercase;
-}
-
-.info {
-    padding: 24px var(--var--page-padding);
-}
-
-.info-text {
-    margin-top: 16px;
-    color: var(--var--text-color);
+.outro-text {
     font-size: 16px;
     line-height: 24px;
     text-align: center;
 }
 
-.info-text:first-child {
-    margin-top: 0;
+.outro-hr {
+    width: 50%;
+    margin: 12px 0;
+    background-color: #723B27;
 }
 
-.final {
-    height: 100vh;
-    width: 100vw;
-    position: relative;
-}
-
-.final-img {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.final-content {
-    position: absolute;
-    width: 100%;
-    bottom: 40%;
-    left: 0;
-    background-color: rgba(217, 217, 217, 0.8);
+.contacts {
+    margin-top: var(--var--block-margin);
     padding: 0 var(--var--page-padding);
-    height: 170px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
 }
 
-.final-text {
-    font-size: 20px;
-    color: var(--var--text-color);
-    width: 100%;
+.contacts-title {
+    font-size: 24px;
     text-align: center;
-    font-weight: 400;
-    margin-top: 16px;
 }
 
-.final-text:first-child {
-    margin-top: 0;
+.contacts-item {
+    display: block;
+    border: 1px solid #723B27;
+    font-size: 20px;
+    padding: 16px;
+    text-align: center;
+    margin-top: 20px;
+    text-decoration: none;
+    color: #100F0F;
+    transition: .3s;
 }
 
-.final-icon {
-    margin-top: 12px;
+.contacts-item:hover {
+    background-color: #723B27;
+    color: #FDFDFD;
 }
