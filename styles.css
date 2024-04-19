@@ -74,8 +74,8 @@ body {
 }
 
 .about-img {
-    height: 120px;
-    width: 120px;
+    height: 180px;
+    width: 180px;
 }
 
 .about-text {
@@ -109,6 +109,10 @@ body {
     justify-content: center;
     text-align: center;
     margin-bottom: 24px;
+}
+
+.coursesTitle-description {
+    margin-top: 24px;
 }
 
 .coursesItem-title h3 {
@@ -169,6 +173,11 @@ body {
     font-size: 16px;
 }
 
+.coursesWarning {
+    margin-top: 24px;
+    text-align: center;
+}
+
 .outro {
     margin-top: var(--var--block-margin);
     display: flex;
@@ -179,8 +188,8 @@ body {
 }
 
 .outro-img  {
-    height: 120px;
-    width: 120px;
+    height: 180px;
+    width: 180px;
     margin-bottom: 16px;
 }
 
