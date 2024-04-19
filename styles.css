@@ -1,0 +1,115 @@
+@font-face {
+    font-family: "Accuratist";
+    src: url("./font/Accuratist.otf") format("opentype");
+}
+
+:root {
+    --var--text-color: #100F0F;
+    --var--page-padding: 16px;
+    --var--page-background: white;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Accuratist';
+    background-color: var(--var--page-background);
+}
+
+.main {
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+}
+
+.main-img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.main-content {
+    position: absolute;
+    width: 100%;
+    bottom: 20%;
+    left: 0;
+    background-color: rgba(217, 217, 217, 0.8);
+    padding: 0 var(--var--page-padding);
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-title {
+    font-size: 20px;
+    color: var(--var--text-color);
+    width: 100%;
+    text-align: center;
+    font-weight: 400;
+}
+
+.about {
+    padding: 24px var(--var--page-padding);
+}
+
+.about-text {
+    color: 24px var(--var--text-color);
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+}
+
+.ideology {
+    padding: 24px var(--var--page-padding);
+    background-color: rgba(217, 217, 217, 0.8);
+}
+
+.ideology-text {
+    color: 24px var(--var--text-color);
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+}
+
+.programs {
+    margin-top: 48px;
+}
+
+.programs-title {
+    color: var(--var--text-color);
+    font-size: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+}
+
+.programItem {
+    padding: 24px var(--var--page-padding);
+}
+
+.programItem:nth-child(even) {
+    background-color: rgba(217, 217, 217, 0.8);
+}
+
+.programItem-par {
+    margin-top: 16px;
+}
+
+.programItem-par:first-child {
+    margin-top: 0;
+}
+
+.programItem-par .title {
+    color: var(--var--text-color);
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: uppercase;
+}
