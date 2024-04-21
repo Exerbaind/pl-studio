@@ -127,6 +127,7 @@ body {
 .students-silder-item-img:last-child {
     margin-top: 12px;
     width: 100%;
+    height: 300px;
 }
 
 .students-slider-btns {
