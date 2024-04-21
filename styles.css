@@ -87,6 +87,8 @@ body {
 
 .students {
     margin-top: var(--var--block-margin);
+    padding: 0 var(--var--page-padding);
+    overflow-x: hidden;
 }
 
 .students-title {
@@ -96,11 +98,84 @@ body {
     text-align: center;
 }
 
+.students-slider {
+    width: 100%;
+    margin-top: 24px;
+    overflow-x: hidden;
+}
+
+.students-slider-wrapper {
+    transform: translateX(0);
+    transition: .3s;
+    display: flex;
+}
+
+.students-slider-item {
+    min-width: calc(100vw - 32px);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.students-silder-item-img {
+    height: 280px;
+    object-fit: cover;
+    width: calc(50% - 6px);
+}
+
+.students-silder-item-img:last-child {
+    margin-top: 12px;
+    width: 100%;
+}
+
+.students-slider-btns {
+    margin-top: 12px;
+    display: flex;
+}
+
+.students-slider-back-btn {
+    width: 50%;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    transform: rotate(180deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.students-slider-next-btn {
+    width: 50%;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.students-slider-back-btn svg {
+    height: 50px;
+    width: 100%;
+}
+
+
+.students-slider-next-btn svg {
+    height: 50px;
+    width: 100%;
+}
+
+
 .courses {
     margin-top: var(--var--block-margin);
 }
 
-.coursesItem {}
+.coursesItem:nth-child(2) {
+    margin-top: var(--var--block-margin);
+}
+
+
 
 .coursesItem-title {
     display: flex;
@@ -156,6 +231,14 @@ body {
 .coursesItem-block-subTitle {
     font-size: 18px;
     line-height: 24px;
+}
+
+.coursesItem-block-list {
+    list-style-type: none;
+}
+
+.coursesItem-block-list-item {
+    text-align: center;
 }
 
 .coursesItem-block-text {
