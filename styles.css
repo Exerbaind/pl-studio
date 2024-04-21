@@ -112,10 +112,12 @@ body {
 
 .students-slider-item {
     min-width: calc(100vw - 32px);
+}
+
+.students-slider-item-row {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
-    align-items: center;
+    width: 100%;
 }
 
 .students-silder-item-img {
@@ -124,10 +126,10 @@ body {
     width: calc(50% - 6px);
 }
 
-.students-silder-item-img:last-child {
+.students-silder-item-img-big {
     margin-top: 12px;
+    object-fit: cover;
     width: 100%;
-    height: 300px;
 }
 
 .students-slider-btns {
