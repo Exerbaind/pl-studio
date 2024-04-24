@@ -25,6 +25,10 @@ body {
     transition: .3;
 }
 
+iframe {
+    display: none !important;
+}
+
 .body-hider {
     opacity: 0;
 }
